@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageAdmin.master.cs"
+    Inherits="MasterPages_MasterPageAdmin" %>
+
+<%@ Register Src="../UserControls/ucLeftPanelAdmin.ascx" TagName="ucLeftPanelAdmin" TagPrefix="uc1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table >
+             <tr>
+                <td colspan="2">
+                    <asp:Image ID="Image1" runat="server" Height="134px" Width="1195px" ImageAlign="Right" ImageUrl="~/SiteImages/SWSPline.jpg"/>
+                </td>
+            </tr>
+           
+            <tr>
+                <td colspan="2" style="text-align:right">
+                    <asp:LinkButton ID="LinkButtonSignOut" Text="Log Out" runat="server" OnClick="LinkButtonSignOut_Click"></asp:LinkButton>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td style="width: 30%; vertical-align: top;margin-right:100px">
+                    <uc1:ucLeftPanelAdmin ID="ucLeftPanelAdmin1" runat="server" />
+                </td>
+                <td style="width: 70%;text-align:left">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

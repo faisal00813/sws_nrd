@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageNew.master.cs" Inherits="MasterPages_MasterPageNew" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>Single Window System - Nanded Division</title>
+
+    <link href="../style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div title="Single Window System - Nanded Division">
+        <div class="wholeBody">
+            <div class="topBanner"></div>
+            <div class"leftCol"></div>
+            <div class="centerBody"></div>
+
+
+        </div>
+    </div>
+    </form>
+</body>
+</html>
