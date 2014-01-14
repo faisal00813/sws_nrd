@@ -12,7 +12,7 @@
         <asp:Button ID ="ButtonExport"  runat ="server" Text="Export to MS-Excel" OnClick="ButtonExport_Click"/>
         <br />
         <asp:label ID="LabelMessage" runat ="server"  ></asp:label>
-        <asp:GridView ID="GridView1" Width ="100%" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnRowCommand="GridView1_RowCommand">
+        <asp:GridView ID="GridView1" Width ="100%" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnRowCommand="GridView1_RowCommand" CssClass="kysGrid">
             <Columns>
                
                     <asp:TemplateField HeaderText="Delete" >

@@ -19,7 +19,7 @@
       <tr>
           <td class="auto-style2">
               <br />
-              <asp:Label ID="Label9" runat="server" Font-Size="XX-Large" Text="Register Your Grievances Online"></asp:Label>
+              <asp:Label ID="Label9" runat="server" Font-Size="XX-Large" Text="Register Your Grievances Online" CssClass="text"></asp:Label>
               <br />
               <br />
           </td>
@@ -30,7 +30,7 @@
       
         <tr>
             <td class="auto-style2">
-                <asp:Label ID="Label1" Text="Name" runat="server"></asp:Label>
+                <asp:Label ID="Label1" Text="Name" runat="server" CssClass="text"></asp:Label>
 
             </td>
             <td>
@@ -42,7 +42,7 @@
         </tr>
         <tr>
             <td class="auto-style2">
-                <asp:Label ID="Label2" Text="Father/ Husband Name" runat="server"></asp:Label>
+                <asp:Label ID="Label2" Text="Father/ Husband Name" runat="server" CssClass="text"></asp:Label>
 
             </td>
             <td>
@@ -54,7 +54,7 @@
         </tr>
         <tr>
             <td class="auto-style2">
-                <asp:Label ID="Label3" Text="Designation" runat="server"></asp:Label>
+                <asp:Label ID="Label3" Text="Designation" runat="server" CssClass="text"></asp:Label>
 
             </td>
             <td>
@@ -66,7 +66,7 @@
         </tr>
         <tr>
             <td class="auto-style2">
-                <asp:Label ID="Label4" Text="Station" runat="server"></asp:Label>
+                <asp:Label ID="Label4" Text="Station" runat="server" CssClass="text"></asp:Label>
 
             </td>
             <td>
@@ -78,19 +78,19 @@
         </tr>
         <tr>
             <td class="auto-style2">
-                <asp:Label ID="Label5" Text="Mobile Number" runat="server"></asp:Label>
+                <asp:Label ID="Label5" Text="Mobile Number" runat="server" CssClass="text"></asp:Label>
 
             </td>
             <td>
 
             </td>
             <td class="auto-style1">
-                <asp:TextBox runat="server" ID="TextBoxMobileNumber"></asp:TextBox>
+                <asp:TextBox runat="server" ID="TextBoxMobileNumber" ></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style2">
-                <asp:Label ID="Label6" Text="Email" runat="server"></asp:Label>
+                <asp:Label ID="Label6" Text="Email" runat="server" CssClass="text"></asp:Label>
 
             </td>
             <td>
@@ -102,7 +102,7 @@
         </tr>
         <tr>
             <td class="auto-style2">
-                <asp:Label ID="Label7" Text="Subject" runat="server"></asp:Label>
+                <asp:Label ID="Label7" Text="Subject" runat="server" CssClass="text"></asp:Label>
 
             &nbsp;(Not more than 450 Letters)</td>
             <td>
@@ -114,7 +114,7 @@
         </tr>
         <tr>
             <td class="auto-style2">
-                <asp:Label ID="Label8" Text="Upload Your Application File" runat="server"></asp:Label>
+                <asp:Label ID="Label8" Text="Upload Your Application File" runat="server" CssClass="text"></asp:Label>
             </td>
             <td>
 
@@ -133,15 +133,15 @@
             <td>               
                 <br />
                 <br />
-                <asp:Button ID="ButtonRegister" Width="120" Text="Register" runat="server" OnClick="ButtonRegister_Click" />  
+                <asp:Button ID="ButtonRegister" Width="120" Text="Register" runat="server" OnClick="ButtonRegister_Click" CssClass="abutton" />  
                 &nbsp;
-                <asp:Button ID="ButtonReset" Width="120" Text="Reset" runat="server" OnClick="ButtonReset_Click" />  
+                <asp:Button ID="ButtonReset" Width="120" Text="Reset" runat="server" OnClick="ButtonReset_Click" CssClass="abutton" />  
                              
             </td>
         </tr>
       <tr>
           <td colspan="3">
-              <asp:Label Text="" ID="LabelMessage" ForeColor="Red" runat="server"></asp:Label>
+              <asp:Label Text="" ID="LabelMessage" ForeColor="Red" runat="server" CssClass="text"></asp:Label>
           </td>
       </tr>
     </table>

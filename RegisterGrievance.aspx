@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/MasterPage.master" AutoEventWireup="true" CodeFile="RegisterGrievance.aspx.cs" Inherits="RegisterGrievance" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/MasterPageNew.master" AutoEventWireup="true" CodeFile="RegisterGrievance.aspx.cs" Inherits="RegisterGrievance" %>
 <%@ Register Src="~/UserControls/ucRegisterGrievance.ascx" TagName="ucRegisterGrievance" TagPrefix="uc2" %>
 
 

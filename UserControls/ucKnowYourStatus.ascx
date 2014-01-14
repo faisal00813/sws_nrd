@@ -4,7 +4,7 @@
         <td style="text-align:left;width:150px">Enter SWS Number</td>
         <td style="text-align:left">
             <asp:TextBox ID="TextBoxSWSNumber" runat="server">     </asp:TextBox>
-            <asp:Button Text="Search" runat="server" ID="ButtonSearch" OnClick="ButtonSearch_Click" ></asp:Button>
+            <asp:Button Text="Search" runat="server" ID="ButtonSearch" OnClick="ButtonSearch_Click" CssClass="abutton" ></asp:Button>
         </td>
         
     </tr>

@@ -8,7 +8,8 @@
 <head runat="server">
 
     <title>Single Window System - Nanded Division</title>
-
+        <link href='http://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     <link href="../style.css" rel="stylesheet" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -17,19 +18,20 @@
     <form id="form1" runat="server">
     <div title="Single Window System - Nanded Division">
         <div class="wholeBody">
-            <div class="topBanner"></div>
+            <div class="topBanner">
+                <img src="../SiteImages/logosws.gif" style="margin-left: 20%" /></div>
             <div class="leftcol" >
                 <div id="buttons">
                     <uc1:ucLeftPanelAdmin ID="ucLeftPanelAdmin1" runat="server" />
                 </div>
                
-                <div id="inspiration">
-
+                <div id="inspiration" style="font-family: 'Montserrat Alternates', sans-serif; top:320px !important;">
+                    Inspired By:<br/>DRM<br />Sr DPO<br/>DPO
                 </div>
             </div>
             <div class="centercol" >
                 <div id="logout">
-                     <asp:LinkButton ID="LinkButtonSignOut" Text="Log Out" runat="server" OnClick="LinkButtonSignOut_Click"></asp:LinkButton>
+                     <asp:LinkButton ID="LinkButtonSignOut" Text="Log Out" runat="server" OnClick="LinkButtonSignOut_Click" CssClass="text"></asp:LinkButton>
 
                 </div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

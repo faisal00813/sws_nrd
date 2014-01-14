@@ -6,6 +6,12 @@ div.wholeBody {
     
 }
 
+#text {
+    font-family: 'Nunito', sans-serif;
+}
+.text {
+    font-family: 'Nunito', sans-serif;
+}
 div.topBanner {
     position:absolute;
     left:0px;

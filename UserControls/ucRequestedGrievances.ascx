@@ -2,7 +2,7 @@
 <asp:Label ID="LabelMessage" runat="server"></asp:Label>
 <asp:GridView ID="GridView1" OnRowDataBound="GridView1_RowDataBound"
     OnRowCommand="GridView1_RowCommand" Width="1200px" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" 
-    DataKeyNames="GrievanceOnlineRequestID" DataSourceID="SqlDataSource1" PageSize="10">
+    DataKeyNames="GrievanceOnlineRequestID" DataSourceID="SqlDataSource1" PageSize="10" CssClass="kysGrid">
     <Columns>
         <asp:TemplateField HeaderText="Accept">
             <ItemTemplate>

@@ -16,7 +16,7 @@
         <tr>
             <td colspan="2">
                 <asp:GridView ID="GridViewUser" Width="800px" OnRowDataBound="GridView1_RowDataBound" OnRowCommand="GridView1_RowCommand" runat="server"
-                    AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="UserID" DataSourceID="SqlDataSourceUser">
+                    AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="UserID" DataSourceID="SqlDataSourceUser" CssClass="kysGrid">
                     <Columns>
                         <asp:TemplateField HeaderText="Edit" Visible="false">
                             <ItemTemplate>
