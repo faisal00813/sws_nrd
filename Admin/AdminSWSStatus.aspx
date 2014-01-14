@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/MasterPageAdmin.master" AutoEventWireup="true" CodeFile="AdminSWSStatus.aspx.cs" Inherits="Admin_AdminSWSStatus" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/MasterPageAdminNew.master" AutoEventWireup="true" CodeFile="AdminSWSStatus.aspx.cs" Inherits="Admin_AdminSWSStatus" %>
 
 <%@ Register src="../UserControls/ucKnowYourStatus.ascx" tagname="ucKnowYourStatus" tagprefix="uc1" %>
 

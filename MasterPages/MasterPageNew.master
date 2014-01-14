@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageNew.master.cs" Inherits="MasterPages_MasterPageNew" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageNew.master.cs" Inherits="MasterPages_MasterPageNew" EnableTheming="True" %>
+<%@ Register Src="../UserControls/ucLeftPanel.ascx" TagName="ucLeftPanel" TagPrefix="uc2" %>
 
 <!DOCTYPE html>
 
@@ -16,8 +17,28 @@
     <div title="Single Window System - Nanded Division">
         <div class="wholeBody">
             <div class="topBanner"></div>
-            <div class"leftCol"></div>
-            <div class="centerBody"></div>
+            <div class="leftcol" >
+                <div id="buttons">
+                    <uc2:ucLeftPanel ID="ucLeftPanel1" runat="server" ClientIDMode="Inherit" />
+                </div>
+                <div id="login">
+
+                    User Name <asp:TextBox ID="TextBoxUserName" runat="server" Width="160px"></asp:TextBox>
+                    Password <asp:TextBox ID="TextBoxPassword" TextMode="Password" runat="server" Width="155px"></asp:TextBox>
+                    <asp:Button ID="ButtonLogin" runat="server" Text="Log In" OnClick="ButtonLogin_Click" CssClass="abutton" Height="36px" Width="125px"/>
+                    <br />
+
+                    <asp:Label id="LabelMessage" runat="server"></asp:Label>
+                </div>
+                <div id="inspiration">
+
+                </div>
+            </div>
+            <div class="centercol" >
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <asp:SqlDataSource ID="SqlDataSourceUser" runat="server" ConnectionString="<%$ ConnectionStrings:SWSDBConnectionString %>" SelectCommand="SELECT [UserName], [Password], [IsSuperAdmin], [Name], [Designation] FROM [AdminUser]"></asp:SqlDataSource>
+                    </asp:ContentPlaceHolder>
+            </div>
 
 
         </div>

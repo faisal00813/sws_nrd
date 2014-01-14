@@ -1,7 +1,148 @@
 ﻿body {
 }
+div.wholeBody {
+    margin:0 auto;
+    position:absolute;
+    
+}
 
 div.topBanner {
-    height:76px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1200px;
+    height:80px;
     background:url(./SiteImages/top.jpg) repeat-x;
+}
+
+div.leftcol {
+    position:absolute;
+    left:0px;
+    top:80px;
+    width:200px;
+    height:400px;
+}
+
+div.centercol {
+    position:absolute;
+    left:200px;
+    top:80px;
+    width:800px;
+    height:400px;
+
+    
+}
+
+div#buttons {
+    position:absolute;
+    left:5px;
+    top:0px;
+    width:195px;
+    height:150px;
+}
+
+div#login {
+    position:absolute;
+    left:5px;
+    top:150px;
+    width:179px;
+    height:148px;
+    font-size:12px;
+font-family:arial, helvetica, sans-serif;
+}
+div#inspiration {
+position:absolute;
+left:5px;
+top:300px;
+height:88px;
+width:195px;
+}
+
+input.abutton{
+border:1px solid #15aeec; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+ background-color: #49c0f0; background-image: linear-gradient(to bottom, #49c0f0, #2CAFE3);
+ }
+
+input.abutton:hover{
+ border:1px solid #1090c3;
+ background-color: #1ab0ec; background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2);
+ }
+
+
+
+table.kysGrid {
+		border-collapse:collapse;
+		background:#EFF4FB url(http://www.roscripts.com/images/teaser.gif) repeat-x;
+		border-left:1px solid #686868;
+		border-right:1px solid #686868;
+		font:0.8em/145% 'Trebuchet MS',helvetica,arial,verdana;
+		color: #333;
+}
+
+table.kysGrid td,table.kysGrid th {
+		padding:5px;
+}
+
+table.kysGrid caption {
+		padding: 0 0 .5em 0;
+		text-align: left;
+		font-size: 1.4em;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #333;
+		background: transparent;
+}
+
+
+/* =links
+----------------------------------------------- */
+
+table.kysGrid a {
+		color:#950000;
+		text-decoration:none;
+}
+
+table.kysGrid a:link {}
+
+table.kysGrid a:visited {
+		font-weight:normal;
+		color:#666;
+		text-decoration: line-through;
+}
+
+table.kysGrid a:hover {
+		border-bottom: 1px dashed #bbb;
+}
+
+/* =head =foot
+----------------------------------------------- */
+
+table.kysGrid thead th,table.kysGrid tfoot th,table.kysGrid tfoot td {
+		background:#333 url(http://www.roscripts.com/images/llsh.gif) repeat-x;
+		color:#fff
+}
+
+table.kysGrid tfoot td {
+		text-align:right
+}
+
+/* =body
+----------------------------------------------- */
+
+table.kysGrid tbody th,table.kysGrid tbody td {
+		border-bottom: dotted 1px #333;
+}
+
+table.kysGrid tbody th {
+		white-space: nowrap;
+}
+
+table.kysGrid tbody th a {
+		color:#333;
+}
+
+.odd {}
+
+table.kysGrid tbody tr:hover {
+		background:#fafafa
 }

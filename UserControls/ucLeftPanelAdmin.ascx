@@ -13,14 +13,14 @@
 <table style="width: 100%;vertical-align:top;text-align:left">
     <tr>
         <td>
-            <br />
+          
             <a href="RequestedGrievance.aspx"><asp:Button ID="Button1" runat="server" Text="Requested Grievances" Width="159px" OnClick="Button1_Click" Height="40px" />
             </a></td>
 
     </tr>
     <tr>
         <td>
-            <br />
+          
             <a href="AdminAcceptedGrievance.aspx"> <asp:Button ID="Button2" runat="server" Text="SWS Grievances" Width="159px" OnClick="Button2_Click" Height="40px" />
             </a></td>
 
@@ -28,30 +28,26 @@
     
     <tr>
         <td>
-            <br />
+           
             <a href="RequestedGrievance.aspx"><asp:Button ID="Button3" runat="server" Text="Change Password" Width="159px" OnClick="Button3_Click1" Height="40px" />
             </a></td>
 
     </tr>
     <tr>
         <td>
-            <br />
             <a href="RequestedGrievance.aspx"><asp:Button ID="Button4" runat="server" Text="Manage Users" Width="159px" OnClick="Button4_Click" Height="40px" />
             </a></td>
 
     </tr>
     <tr>
         <td>
-            <br />
+         
             <a href="RequestedGrievance.aspx"><asp:Button ID="Button5" runat="server" Text="Show Contact Details" Width="159px" OnClick="Button5_Click" Height="40px" />
             </a></td>
 
     </tr>
  
- <tr>
-        <td class="auto-style2">
-        </td>
-    </tr>
+
     <tr>
         <td>
 
@@ -59,11 +55,7 @@
 
         </td>
     </tr>
-    <tr>
-        <td>
-
-        </td>
-    </tr>
+ 
  <tr>
         <td class="auto-style1">
 

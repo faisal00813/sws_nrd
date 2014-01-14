@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageAdminNew.master.cs" Inherits="MasterPages_MasterPageNew" EnableTheming="True" %>
+
+<%@ Register Src="../UserControls/ucLeftPanelAdmin.ascx" TagName="ucLeftPanelAdmin" TagPrefix="uc1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>Single Window System - Nanded Division</title>
+
+    <link href="../style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div title="Single Window System - Nanded Division">
+        <div class="wholeBody">
+            <div class="topBanner"></div>
+            <div class="leftcol" >
+                <div id="buttons">
+                    <uc1:ucLeftPanelAdmin ID="ucLeftPanelAdmin1" runat="server" />
+                </div>
+               
+                <div id="inspiration">
+
+                </div>
+            </div>
+            <div class="centercol" >
+                <div id="logout">
+                     <asp:LinkButton ID="LinkButtonSignOut" Text="Log Out" runat="server" OnClick="LinkButtonSignOut_Click"></asp:LinkButton>
+
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        
+                    </asp:ContentPlaceHolder>
+            </div>
+
+
+        </div>
+    </div>
+    </form>
+</body>
+</html>

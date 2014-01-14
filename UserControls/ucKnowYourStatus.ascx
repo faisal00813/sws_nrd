@@ -3,12 +3,10 @@
     <tr>
         <td style="text-align:left;width:150px">Enter SWS Number</td>
         <td style="text-align:left">
-            <asp:TextBox ID="TextBoxSWSNumber" runat="server"></asp:TextBox>
-            <asp:Button Text="Search" runat="server" ID="ButtonSearch" OnClick="ButtonSearch_Click"></asp:Button>
+            <asp:TextBox ID="TextBoxSWSNumber" runat="server">     </asp:TextBox>
+            <asp:Button Text="Search" runat="server" ID="ButtonSearch" OnClick="ButtonSearch_Click" ></asp:Button>
         </td>
-        <td>
-            
-        </td>
+        
     </tr>
     <tr>
         <td colspan="2" style="text-align:right">
@@ -21,7 +19,7 @@
         </tr>
     <tr>
         <td colspan="2">
-            <asp:GridView ID="GridView1" Width="900px" OnRowDataBound="GridView1_RowDataBound" OnRowCommand="GridView1_RowCommand" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="GrievanceID" DataSourceID="SqlDataSource1" PageSize="6" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+            <asp:GridView ID="GridView1" Width="900px" OnRowDataBound="GridView1_RowDataBound" OnRowCommand="GridView1_RowCommand" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="GrievanceID" DataSourceID="SqlDataSource1" PageSize="6" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" CssClass="kysGrid">
                 <Columns>
                     <asp:TemplateField HeaderText="Edit">
                         <ItemTemplate>

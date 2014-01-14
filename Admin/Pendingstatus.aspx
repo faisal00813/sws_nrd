@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/MasterPageAdmin.master" AutoEventWireup="true" CodeFile="Pendingstatus.aspx.cs" Inherits="Admin_Pendingstatus" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/MasterPageAdminNew.master" AutoEventWireup="true" CodeFile="Pendingstatus.aspx.cs" Inherits="Admin_Pendingstatus" %>
 
 <%@ Register src="../UserControls/generatereport.ascx" tagname="generatereport" tagprefix="uc1" %>
 

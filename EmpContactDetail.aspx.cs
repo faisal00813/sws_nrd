@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
+using System.Text;
+using System.Net;
+using System.IO;
 
 public partial class EmpContactDetail : System.Web.UI.Page
 {
@@ -28,6 +31,7 @@ public partial class EmpContactDetail : System.Web.UI.Page
             SqlDataSourceGrievance.InsertParameters.Add("MobileNumber", TextBoxMobile.Text);
             SqlDataSourceGrievance.InsertParameters.Add("Email", TextBoxEmail.Text);
             SqlDataSourceGrievance.Insert();
+            SendSms(TextBoxMobile.Text);
             LabelMessage.Visible = true;
             LabelMessage.Text = "<font color='Blue'>Thank You for Registering Your Contact Details...</font>";
             ClearControls();
@@ -42,6 +46,60 @@ public partial class EmpContactDetail : System.Web.UI.Page
     protected void Button2_Click(object sender, EventArgs e)
     {
         ClearControls();
+    }
+
+    private void SendSms(string mob) {
+
+
+        //Your authentication key
+        string authKey = "2606AlmmRVFM1f52d43d62";
+        //Multiple mobiles numbers seperated by comma
+        string mobileNumber = mob;
+        //Sender ID,While using route4 sender id should be 6 characters long.
+        string senderId = "DRM-NED";
+        //Your message to send, Add URL endcoding here.
+        string message = HttpUtility.UrlEncode("You have been succesfully registered in Single Window System.");
+
+        //Prepare you post parameters
+        StringBuilder sbPostData = new StringBuilder();
+        sbPostData.AppendFormat("authkey={0}", authKey);
+        sbPostData.AppendFormat("&mobiles={0}", mobileNumber);
+        sbPostData.AppendFormat("&message={0}", message);
+        sbPostData.AppendFormat("&sender={0}", senderId);
+        sbPostData.AppendFormat("&route={0}", "default");
+
+        try
+        {
+            //Call Send SMS API
+            string sendSMSUri = "http://sms.ssdindia.com/sendhttp.php";
+            //Create HTTPWebrequest
+            HttpWebRequest httpWReq = (HttpWebRequest)WebRequest.Create(sendSMSUri);
+            //Prepare and Add URL Encoded data
+            UTF8Encoding encoding = new UTF8Encoding();
+            byte[] data = encoding.GetBytes(sbPostData.ToString());
+            //Specify post method
+            httpWReq.Method = "POST";
+            httpWReq.ContentType = "application/x-www-form-urlencoded";
+            httpWReq.ContentLength = data.Length;
+            using (Stream stream = httpWReq.GetRequestStream())
+            {
+                stream.Write(data, 0, data.Length);
+            }
+            //Get the response
+            HttpWebResponse response = (HttpWebResponse)httpWReq.GetResponse();
+            StreamReader reader = new StreamReader(response.GetResponseStream());
+            string responseString = reader.ReadToEnd();
+
+            //Close the response
+            reader.Close();
+            response.Close();
+        }
+        catch (SystemException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
+    
     }
 
     private bool IsMobileNumberExist(string mobileNumber)
