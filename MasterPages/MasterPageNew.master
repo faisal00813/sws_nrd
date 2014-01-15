@@ -32,7 +32,7 @@
                     <asp:Label id="LabelMessage" runat="server"></asp:Label>
                 </div>
                 <div id="inspiration" style="font-family: 'Montserrat Alternates', sans-serif;">
-                    Inspired By:<br/>DRM - Mr.P C Sharma<br />Sr DPO - G Ragiri<br/>DPO - T.D Shinde
+                     Inspired By:<br/>DRM - Mr.P C Sharma<br />ADRM - Mr P B Ninawe <br/>Sr DPO - Mr G Ragiri<br/>DPO - Dr Shinde Tushaba
                 </div>
             </div>
             <div class="centercol" >
